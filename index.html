@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Disney</title>
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
+
 <body>
+    <header class="header ">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item ">
+                    <a href="#" class="button button--secondary">Assine agora</a>
+                </li>
+                <li class="header__links__item  ">
+                    <a href="#" class="button button--dark">Entrar</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
+            <div class="hero__content__branding">
                 <img src="./dist/images/disneyplus.svg" alt="Disney+">
-            </h1>
+            </div>
             <h3 class="title--small">
                 As melhores histórias em um só lugar.
             </h3>
@@ -40,77 +57,77 @@
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-        <button data-tab-button="em_breve" class="shows__tabs__buttom shows__tabs__buttom--is-active">
-            Em Breve
-        </button>
-        <button data-tab-button="populares" class="shows__tabs__buttom">
-            Mais populares
-        </button>
-        <button data-tab-button="star_plus" class="shows__tabs__buttom">
-            Mais no Star+
-        </button>
+            <button data-tab-button="em_breve" class="shows__tabs__buttom shows__tabs__buttom--is-active">
+                Em Breve
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__buttom">
+                Mais populares
+            </button>
+            <button data-tab-button="star_plus" class="shows__tabs__buttom">
+                Mais no Star+
+            </button>
         </nav>
         <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
-            <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/desencantada.jpg" alt="desencantada">
-                </li>
-                <li class="shows__list__item">
-                    <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
-                    </li>
-                    <li class="shows__list__item">
-                        <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
-                        </li>
-                        <li class="shows__list__item">
-                            <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses">
-                            </li>
-                            <li class="shows__list__item">
-                                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
-                                </li>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
+            </li>
         </ul>
         <ul data-tab-id="populares" class="shows__list ">
             <li class="shows__list__item">
-            <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey">
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/" alt="desencantada">
-                </li>
-                <li class="shows__list__item">
-                    <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
-                    </li>
-                    <li class="shows__list__item">
-                        <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
-                        </li>
-                        <li class="shows__list__item">
-                            <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses">
-                            </li>
-                            <li class="shows__list__item">
-                                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
-                                </li>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
+            </li>
         </ul>
         <ul data-tab-id="star_plus" class="shows__list ">
             <li class="shows__list__item">
-            <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="spidey">
             </li>
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/desencantada.jpg" alt="desencantada">
-                </li>
-                <li class="shows__list__item">
-                    <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
-                    </li>
-                    <li class="shows__list__item">
-                        <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
-                        </li>
-                        <li class="shows__list__item">
-                            <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses">
-                            </li>
-                            <li class="shows__list__item">
-                                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
-                                </li>
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The santa clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="willow">
+            </li>
         </ul>
-       
+
     </section>
     <section class="plans">
         <h2 class="title--big">Escolha seu plano</h2>
@@ -149,16 +166,22 @@
         <div class="image-text-section__text_container">
             <h2 class="title">Assista do seu jeito</h2>
             <p class="text--big">
-                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4K não para de crescer.Além disso, para a felicidade de todos, é possível assistir em até 4 telas ao mesmo tempo.
+                Aproveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de
+                títulos em 4K não para de crescer.Além disso, para a felicidade de todos, é possível assistir em até 4
+                telas ao mesmo tempo.
             </p>
         </div>
 
     </section>
     <section class="image-text-section image-text-section--image-full-width">
+        <picture>
+            <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
         <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão">
+    </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">Baixe filmes e séries</h2>
-            <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até mesmo sem internet.</p>
+            <p class="text--big">Baixe e assista quando e onde quiser. Assim, seus favoritos estão sempre com você, até
+                mesmo sem internet.</p>
         </div>
 
     </section>
@@ -209,6 +232,87 @@
             </li>
         </ul>
     </section>
+    <section class="faq">
+        <h2 class="title"> Perguntas frequentes </h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+
+            </li>
+            <li class="faq__questions__item ">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question" data-faq-question>
+                    Pergunta?
+                </div>
+                <div class="faq__questions__item__answer text--big">
+                    A resposta da pergunta
+                </div>
+
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="dinsey+">
+            <ul class="footer_links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do Mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Termos e condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Anúncio personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Dispositivos compatíveis</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a class="text--small" href="#">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2023 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura
+                paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é
+                comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas,
+                12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+
+            </p>
+        </div>
+
+    </footer>
     <script src="./src/main.js"></script>
 </body>
+
 </html>

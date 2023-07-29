@@ -3,7 +3,9 @@
 @use 'shows';
 @use 'plans';
 @use 'available-devices';
-
+@use 'faq';
+@use 'footer';
+@use 'header';
 @font-face {
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Regular.woff2);
@@ -21,6 +23,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
+    list-style: none;
 }
 
 
@@ -31,9 +34,9 @@ body{
 
 }
 
-@mixin text($fontSize:16px){
+@mixin text($fontSize: 16px) {
     font-size: $fontSize;
-    line-height: +10px;
+    line-height: $fontSize + 10px;
     color: variaveis.$CorTextoPrincipal;
 }
 
@@ -97,16 +100,46 @@ body{
 }
 
 .button {  
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 60px;
         font-size: 18px;
         color: variaveis.$CorTextoSecundario;
-        background-color: #7828ff;
+        background-color: variaveis.$CordefundoBotaoprimario;
         text-transform: uppercase;
         border-radius: 4px;
-        margin-top: 2vw;
-        margin-bottom: 8px;
+        text-decoration: none;
+        padding: 8px 14px;
+        letter-spacing:1px ;
+        border: 1px solid variaveis.$CordefundoBotaoprimario;
+        
+        &:hover {
+            background-color: lighten( variaveis.$CordefundoBotaoprimario, 3%);
+        }
+
+
+        &--secondary {
+    background-color: variaveis.$Cordefundobotaosegundario;
+    border-color:variaveis.$Cordefundobotaosegundario ;
+
+        &:hover {
+            background-color: lighten(variaveis.$Cordefundobotaosegundario, 3%);
+        }
+        
+        }
+
+        &--dark {
+        background-color: rgba(variaveis.$Cordefundobotaodark, 0.8);
+        border-color: variaveis.$CorTextoSecundario;
+
+        &:hover {
+            background-color:variaveis.$CorTextoSecundario ;
+            color: variaveis.$corDeFundo;
+        }
+        }
+    
 }
 
 .image-text-section {
@@ -114,6 +147,10 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
+    @media (max-width:768px){
+        display: block;
+    }
     img {
         max-width: 100%;
     }
@@ -138,6 +175,12 @@ body{
             flex-direction: column;
             justify-content: center;
             width: calc(50% - 5.6vw);
+            
+            @media (max-width:768px){
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
 
         }
     }
